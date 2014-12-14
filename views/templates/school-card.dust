@@ -1,0 +1,23 @@
+<div class="col-4 school-card" data-lat="{lat}" data-lng="{lng}">
+  <a class="spread-link" href="/school?s={id}"></a>
+  <div class="school-photo-container">
+    <div class="discover-photo" style="background-image:url({cover})"></div>
+  </div>
+  <div class="school-summary">
+    <div class="description-item school-icon">
+      <ul>
+        {#logo}
+          <li>
+            <span class="round-face border-icon user-head-image"><img src="{logo}"></span>
+          </li>
+        {/logo}
+      </ul>
+    </div>
+    <div class="description-item">
+      <p id="school-name">{name}</p>
+    </div>
+    <div class="description-item sub-content">
+      <p>{briefing}</p>
+    </div>
+  </div>
+</div>

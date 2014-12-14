@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCoq2mE4Ywhw2Lw5XzzBeWVc603qgA6RcE&sensor=true"></script>
+    <link rel="stylesheet" type="text/css" href="/css/global.css">
+    <link rel="stylesheet" type="text/css" href="/css/home.css">
+    <link rel="stylesheet" type="text/css" href="/css/search.css">
+    <link rel="stylesheet" type="text/css" href="/css/google-map.css">
+    <link rel="stylesheet" type="text/css" href="/css/common.css">
+    <link rel="stylesheet" type="text/css" href="/css/filter.css">
+    <link rel="stylesheet" type="text/css" href="/css/pagination.css">
+    <link rel="stylesheet" type="text/css" href="/css/basic.css">
+    <link rel="stylesheet" type="text/css" href="/css/member.css">
+  </head>
+  <body onload="">
+    {>"templates/top-banner"/}
+    <!--div class="search-area">
+      <form class="search-box">
+        <input id="search-input-box" type="text" class="search-input-box" value="ZIP Code or Location"/>
+        <input type="button" class="search-submit-button" value="Search"/>
+      </form>
+    </div-->
+    <div class="main-container">
+      <div class="map-search">
+        <div class="col-all">
+          <div class="filter-section">
+            <form action="/search" method="GET">
+              <input name="q" class="input-box" type="text" placeholder="Find School"/>
+              <input class="submit-button" type="submit" value="Search"/>
+            </form>
+          </div>
+          <div class="school-section">
+            {#data.schools}
+              {@math key=$idx method="mod" operand="3"}
+                {@eq value=0} {!start!}
+                  <div class="row">
+                    {>"templates/school-card"/}
+                {/eq}
+                {@eq value=2} {!end!}
+                    {>"templates/school-card"/}
+                  </div>
+                {/eq}
+                {@default}
+                    {>"templates/school-card"/}
+                {/default}
+              {/math}
+            {:else}
+              <p>School is not found in this area...</p>
+            {/data.schools}
+            {@math key=data.schools.length method="mod" operand="3"}
+              {@ne value=2}
+                </div>
+              {/ne}
+            {/math}
+          </div>
+          <div class="pagination-section">
+            <div class="pagination-container row">
+              {?data.prevPage}
+                {@select key=data.prevPage}
+                  {@gt value=0}
+                    <a class="pagination-button" href="?p={data.prevPage}"><</a>
+                  {/gt}
+                {/select}
+              {/data.prevPage}
+              {?data.nextPage}
+                <a class="pagination-button" href="?p={data.nextPage}">></a>
+              {/data.nextPage}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--div class="footer">
+      <div class="copy-right-container">
+        <p class="copy-right">Copy rights reserve by Bananaplan</p>
+      </div>
+    </div-->
+  </body>
+  <script type="text/javascript" src="/js/google-map.js"></script>
+  <script type="text/javascript" src="/js/ajax.js"></script>
+  <script type="text/javascript" src="/js/region.js"></script>
+  <script type="text/javascript" src="/js/signup.js"></script>
+  <script type="text/javascript" src="/js/fb-login.js"></script>
+</html>

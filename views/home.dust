@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/css/global.css">
+    <link rel="stylesheet" type="text/css" href="/css/home.css">
+    <link rel="stylesheet" type="text/css" href="/css/search.css">
+    <link rel="stylesheet" type="text/css" href="/css/basic.css">
+    <link rel="stylesheet" type="text/css" href="/css/signup_login.css">
+    <link rel="stylesheet" type="text/css" href="/css/application-form.css">
+    <link rel="stylesheet" type="text/css" href="/css/common.css">
+    <link href="/css/structure.css" rel="stylesheet">
+    <link href="/css/form.css" rel="stylesheet">
+  </head>
+  <body>
+    {>"templates/top-banner"/}
+    <div class="teaser">
+      <img src="/assets/images/cover.jpeg">
+    </div>
+    <div class="latest-news">
+      <span class="latest-news-description">試營運，免費申請</span>
+    </div>
+    <div class="submit-area">
+      <button id="upload-application-form-button" class="home-submit-button">馬上申請！</button>
+    </div>
+    <div class="main-container">
+      <div class="center-rail">
+        <!--div class="row discover-headline">
+          <form action="/search" method="GET">
+            <input name="q" class="input-box" type="text" placeholder="Find School"/>
+            <input class="submit-button" type="submit" value="Search"/>
+          </form>
+        </div-->
+        <div class="row">
+          <div class="col-1-4">
+            <div class="category-card category-red clickable spread-link-container">
+              <a class="spread-link" href="search"></a>
+              <div class="discover-title">
+                <p class="title">學校搜尋</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-4">
+            <div class="category-card category-brown  spread-link-container">
+              <!--a class="spread-link" href=""></a-->
+              <div class="discover-title">
+                <p class="title">文件編修</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-4">
+            <div class="category-card category-red  spread-link-container">
+              <!--a class="spread-link" href=""></a-->
+              <div class="discover-title">
+                <p class="title">熱門ＱＡ</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-4">
+            <div class="category-card category-brown  spread-link-container">
+              <!--a class="spread-link" href=""></a-->
+              <div class="discover-title">
+                <p class="title">成功申請案例</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {>"templates/footer"/}
+    {>"templates/application-form"/}
+  </body>
+  <script type="text/javascript" src="/js/wufoo.js"></script>
+  <script type="text/javascript" src="/js/home.js"></script>
+  <script type="text/javascript" src="/js/ajax.js"></script>
+  <script type="text/javascript" src="/js/application-form.js"></script>
+  <script type="text/javascript" src="/js/signup.js"></script>
+  <script type="text/javascript" src="/js/fb-login.js"></script>
+</html>

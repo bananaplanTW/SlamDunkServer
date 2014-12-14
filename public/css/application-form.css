@@ -1,0 +1,89 @@
+.application-form-popup {
+  width: 700px;
+  max-height: 500px;
+  overflow: scroll;
+}
+
+.application-title {
+  margin-bottom: 30px;
+  margin-top: 20px;
+  font-size: 20px;
+  color: #636363;
+  line-height: 18px;
+}
+
+.application-input-box {
+  width: 240px;
+  height: 40px;
+  margin-top: 5px;
+  font-size: 16px;
+  border: 1px solid #DEDEDE;
+  color: #DEDEDE;
+  padding-left: 10px;
+}
+
+.application-input-submit {
+  color: white;
+  background-color: rgb(38, 214, 170);
+  border: none;
+  box-shadow: inset 0px -1px 1px 0px #999999;
+}
+
+.application-by-creating:before {
+  height: 1px;
+  border: 1px solid #000000;
+  margin-top: 10px;
+}
+
+.form-section {
+  width: 100%;
+}
+
+.form-text-input {
+  height: 40px;
+  margin-top: 5px;
+  font-size: 16px;
+  border: 1px solid #DEDEDE;
+  color: #DEDEDE;
+  padding-left: 10px;
+}
+
+.form-submit {
+  color: white;
+  background-color: #3498db;
+  border: none;
+  box-shadow: inset 0px -1px 1px 0px #999999;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.form-submit:hover {
+  opacity: 0.85;
+}
+
+.file-upload {
+  float: left;
+}
+
+.wufoo li.col-all {
+  width: 100%;
+}
+
+.caption {
+  text-align: left;
+  display: inline-block;
+}
+
+.caption p {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.desc {
+  text-align: left;
+}
+
+.cancel {
+  font-size: 13px;
+}

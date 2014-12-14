@@ -1,0 +1,52 @@
+[
+	{
+		"year": 2014,
+		"top10": [
+			{
+				"month": 12,
+				"videos" : [
+					{
+						"date": 11,
+						"url": "http://ht.cdn.turner.com/nba/big/channels/top_plays/2014/12/11/20141211-top5.nba_nba_1280x720.mp4"
+					},
+					{
+						"date": 9,
+						"url": "http://ht.cdn.turner.com/nba/big/channels/top_plays/2014/12/09/20141209-top10.nba_nba_1280x720.mp4"
+					},
+					{
+						"date": 8,
+						"url": "http://ht.cdn.turner.com/nba/big/channels/top_plays/2014/12/08/20141208-top-10.nba_nba_1280x720.mp4"
+					},
+					{
+						"date": 7,
+						"url": "http://ht.cdn.turner.com/nba/big/channels/top_plays/2014/12/07/20141207-top10.nba_nba_1280x720.mp4"
+					},
+					{
+						"date": 6,
+						"url": "http://ht.cdn.turner.com/nba/big/channels/top_plays/2014/12/06/20141206-top10.nba_nba_1280x720.mp4"
+					},
+					{
+						"date": 5,
+						"url": "http://ht.cdn.turner.com/nba/big/channels/top_plays/2014/12/05/20141205-top-10.nba_nba_1280x720.mp4"
+					},
+					{
+						"date": 4,
+						"url": "http://ht.cdn.turner.com/nba/big/channels/top_plays/2014/12/04/20141204-top-5.nba_nba_1280x720.mp4"
+					},
+					{
+						"date": 3,
+						"url": "http://ht.cdn.turner.com/nba/big/channels/top_plays/2014/12/03/20141203-top10.nba_nba_1280x720.mp4"
+					},
+					{
+						"date": 2,
+						"url": "http://ht.cdn.turner.com/nba/big/channels/top_plays/2014/12/02/20141202-top10.nba_nba_1280x720.mp4"
+					},
+					{
+						"date": 1,
+						"url": "http://ht.cdn.turner.com/nba/big/channels/top_plays/2014/12/01/20141201-top-5.nba_nba_1280x720.mp4"
+					}
+				]
+			}
+		]
+	}
+]

@@ -1,0 +1,138 @@
+/*-- classes that spread to all pages --*/
+body {
+  font-family: Circular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 12px;
+  padding: 0px;
+  margin: 0px;
+}
+
+body.no-scroll
+{
+    overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+ul:after {
+clear: both;
+content: "";
+display: table;
+}
+
+li {
+  list-style-type: none;
+  float: left;
+}
+
+form {
+  margin: 0px;
+}
+
+p {
+  margin: 0px;
+}
+
+label {
+  cursor: pointer;
+  position: relative;
+  padding-left: 25px;
+  font-size: 14px;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox]:checked + label:before {
+  content: '\2713';
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+  font-size: 24px;
+  color: #ff5a5f;
+  text-align: center;
+  line-height: 13px;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  padding: 5px 10px;
+  border: 1px solid black;
+}
+
+.logo {
+  float: left;
+}
+
+.logo p{
+  font-size: 30px;
+  line-height: 30px;
+  color: #3498db;
+}
+
+.footer {
+  margin-top: 50px;
+  height: 80px;
+  background-color: #3498db;
+}
+
+.login, .signup, .logout, .post {
+  color: white;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.copy-right-container {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.copy-right{
+  color: white;
+  font-size: 20px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.main-container {
+  min-height: 100px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.main-container:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.error-container {
+  display: table;
+  width: 100%;
+}
+
+.error-message {
+  width: 100%;
+  text-align:center;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.red {
+  color: red;
+}
+

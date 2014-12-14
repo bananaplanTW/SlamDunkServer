@@ -1,0 +1,99 @@
+.social-logins {
+  text-align: center;
+}
+
+.social-logins ul {
+  display: inline-block;
+}
+
+.fb-login {
+  padding: 15px 20px;
+  background-color:  #3b5998;
+  border-radius: 2px;
+  color: white;
+  cursor: pointer;
+  display: table;
+  width: 240px;
+}
+
+.fb-login:hover {
+  background-color: #4568b2;
+}
+
+.fb-login-icon {
+  display: table-cell;
+  width: 20px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.fb-login-string {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.focus-page {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: none;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.popup {
+  padding: 10px;
+  display: block;
+  width: 300px;
+  background-color: white;
+  border-radius: 2px;
+  border: 1px solid #DEDEDE;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+}
+
+.popup-container {
+  width: 300px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  z-index: 15;
+}
+
+.signup-title {
+  margin-bottom: 30px;
+  margin-top: 20px;
+  font-size: 20px;
+  color: #636363;
+  line-height: 18px;
+}
+
+.signup-input-box {
+  width: 240px;
+  height: 40px;
+  margin-top: 5px;
+  font-size: 16px;
+  border: 1px solid #DEDEDE;
+  color: #DEDEDE;
+  padding-left: 10px;
+}
+
+.signup-input-submit {
+  color: white;
+  background-color: rgb(38, 214, 170);
+  border: none;
+  box-shadow: inset 0px -1px 1px 0px #999999;
+}
+
+.signup-by-creating {
+  margin-top: 20px;
+}
+
+.signup-by-creating:before {
+height: 1px;
+border: 1px solid #000000;
+margin-top: 10px;
+}

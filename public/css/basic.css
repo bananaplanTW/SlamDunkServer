@@ -1,0 +1,28 @@
+/*-- basic style as class --*/
+.margin-bottom-10 {
+  margin-bottom: 10px;
+}
+
+.display-none {
+  display: none;
+}
+
+.display-table{
+  display: table;
+}
+
+.display-table-cell {
+  display: table-cell;
+}
+
+.vertical-align-middle {
+  vertical-align: middle;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.fl-r {
+  float: right;
+}

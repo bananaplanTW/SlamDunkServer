@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCoq2mE4Ywhw2Lw5XzzBeWVc603qgA6RcE&sensor=true"></script>
+    
+    <link rel="stylesheet" type="text/css" href="/css/global.css">
+    
+    <link rel="stylesheet" type="text/css" href="/css/home.css">
+    <link rel="stylesheet" type="text/css" href="/css/google-map.css">
+    <link rel="stylesheet" type="text/css" href="/css/common.css">
+    <link rel="stylesheet" type="text/css" href="/css/filter.css">
+    <link rel="stylesheet" type="text/css" href="/css/basic.css">
+    <link rel="stylesheet" type="text/css" href="/css/member.css">
+    <link rel="stylesheet" type="text/css" href="/css/slideshow.css">
+    <link rel="stylesheet" type="text/css" href="/css/school.css">
+  </head>
+  <body onload="">
+    {>"templates/top-banner"/}
+    <div class="teaser">
+      <img src="{data.cover}">
+    </div>
+    <div class="main-container center-rail">
+      <div class="row">
+        <div class="description-item">
+          <img src="{data.logo}">
+        </div>
+        <div id="group-name" data-lat="{data.lat}" data-lng="{data.lng}" class="description-item group-name">
+          <h2>{data.name}</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-half">
+          <div id="slideshow-container" class="slideshow-container">
+            <a id="prev" class="slideshow-pagination slideshow-prev" href="#"><</a>
+            <ul class="slideshow">
+              {#data.photos}
+                <li class="slideshow-item"><div class="slideshow-image" style="background-image:url({.})"></div></li>
+              {/data.photos}
+            </ul>
+            <a id="next" class="slideshow-pagination slideshow-next" href="#">></a>
+          </div>
+        </div>
+        <div class="col-half">
+          <div class="row">
+            <div class="descrption-area">
+              <h3>概述</h3>
+              {data.briefing}
+              <h3>介紹</h3>
+              <h4>排名</h4>
+              <table cellpadding='0'>
+                <tr>
+                  {#data.ranking}
+                    <td>{year}</td>
+                  {/data.ranking}
+               </tr>
+               <tr>
+                  {#data.ranking}
+                    <td>{rank}</td>
+                  {/data.ranking}
+               </tr>
+              </table>
+              <h4>詳細學校簡介</h4>
+              {data.introduction}
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-all departments">
+          <h3>學校系所</h3>
+          <ul class="department-list">
+            {#data.departments}
+            <li>
+              {name}
+            </li>
+            {/data.departments}
+          </ul>
+        </div>
+      </div>
+    </div>
+    {>"templates/footer"/}
+  </body>
+  <script type="text/javascript" src="/js/group.js"></script>
+  <script type="text/javascript" src="/js/ajax.js"></script>
+  <script type="text/javascript" src="/js/common.js"></script>
+  <script type="text/javascript" src="/js/slideshow.js"></script>
+  <script type="text/javascript" src="/js/signup.js"></script>
+  <script type="text/javascript" src="/js/fb-login.js"></script>
+</html>
